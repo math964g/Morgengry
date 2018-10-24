@@ -33,7 +33,7 @@ namespace Morgengry
         new
         public string ToString()
         {
-            return ItemID;
+            return ("ItemId: " + ItemID + ", Title: " + Title + ", Price: " + Price);
         }
 
 

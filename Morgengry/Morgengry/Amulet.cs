@@ -13,28 +13,25 @@ namespace Morgengry
         public string Design;
         public Level Quality;
 
-        public Amulet(string itemID)
+        public Amulet(string itemID): this(itemID, Level.medium)
         {
-            ItemID = itemID;
         }
 
-        public Amulet(string itemID, Level quality)
+        public Amulet(string itemID, Level quality): this(itemID, quality, "")
         {
-            ItemID = itemID;
-            Quality = quality;
         }
 
         public Amulet(string itemID, Level quality, string design)
         {
             ItemID = itemID;
-            Design = design;
             Quality = quality;
+            Design = design;
         }
 
         new
         public string ToString()
         {
-            return ItemID;
+            return ("ItemId: " + ItemID + ", Quality: " + Quality + ", Design: " + Design);
         }
     }
 }
