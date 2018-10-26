@@ -13,7 +13,7 @@ namespace Morgengry
         public string Design;
         public Level Quality;
 
-        public Amulet(string itemID) : this(itemID, Level.medium)
+        public Amulet(string itemID) : this(itemID, Level.medium, "")
         {
         }
 
@@ -21,9 +21,9 @@ namespace Morgengry
         {
         }
 
-        public Amulet(string itemID, Level quality, string design)
+        public Amulet(string itemID, Level quality, string design) :base(itemID)
         {
-            ItemID = itemID;
+            // ItemID = itemID;
             Quality = quality;
             Design = design;
         }

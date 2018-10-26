@@ -6,12 +6,28 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Book
+    public class Book : Merchandise
     {
-        public string ItemID;
+        // public string ItemID;
         public string Title;
         public double Price;
 
+        public Book(string itemID) : this(itemID, "", 0)
+        {
+        }
+
+        public Book(string itemID, string title) : this(itemID, title, 0) 
+        {
+        }
+
+        public Book(string itemID, string title, double price) : base(itemID)
+        {
+            ItemID = itemID;
+            Title = title;
+            Price = price;
+        }
+
+        /*
         public Book(string itemID)
         {
             ItemID = itemID;
@@ -29,13 +45,13 @@ namespace Morgengry
             Title = title;
             Price = price;
         }
+        */
 
         new
         public string ToString()
         {
             return ("ItemId: " + ItemID + ", Title: " + Title + ", Price: " + Price);
         }
-
-
+        
     }
 }
