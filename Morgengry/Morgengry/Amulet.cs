@@ -21,9 +21,9 @@ namespace Morgengry
         {
         }
 
-        public Amulet(string itemID, Level quality, string design) :base(itemID)
+        public Amulet(string itemID, Level quality, string design)
         {
-            // ItemID = itemID;
+            ItemID = itemID;
             Quality = quality;
             Design = design;
         }
@@ -44,7 +44,7 @@ namespace Morgengry
             }
             */
 
-            new
+        new
         public string ToString()
         {
             return ("ItemId: " + ItemID + ", Quality: " + Quality + ", Design: " + Design);

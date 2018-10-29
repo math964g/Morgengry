@@ -20,7 +20,7 @@ namespace Morgengry
         {
         }
 
-        public Book(string itemID, string title, double price) : base(itemID)
+        public Book(string itemID, string title, double price)
         {
             ItemID = itemID;
             Title = title;
