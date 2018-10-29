@@ -62,7 +62,7 @@ namespace Test
         public void TestGetValueForCourse()
         {
             Assert.AreEqual(0.0, Utility.GetValueOfCourse(c111));
-            Assert.AreEqual(1750.00, Utility.GetValueOfCourse(c112));
+            Assert.AreEqual(2625.00, Utility.GetValueOfCourse(c112));
             Assert.AreEqual(2625.00, courses.GetTotalValue());
         }
     }
