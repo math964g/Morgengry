@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    class Utility
+    public class Utility
     {
+        public double GetValueOfBook(string book);
+
+        public double GetValueOfAmulet(string amulet);
+
+        public double GetValueOfCourse(string course);
     }
 }
