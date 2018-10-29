@@ -8,26 +8,25 @@ namespace Morgengry
 {
     public class Utility
     {
-        private double value;
-
-        public double GetValueOfBook(Book book)
+        public static double GetValueOfBook(Book book)
         {
             return book.Price;
         }
 
-        public double GetValueOfAmulet(Amulet amulet)
+        public static double GetValueOfAmulet(Amulet amulet)
         {
-            if (amulet.Quality == low)
+            double value = 0;
+            if (amulet.Quality == Level.low)
             {
                 value = 12.5;
             }
 
-            if (amulet.Quality == medium)
+            if (amulet.Quality == Level.medium)
             {
                 value = 20.0;
             }
 
-            if (amulet.Quality == high)
+            if (amulet.Quality == Level.high)
             {
                 value = 27.5;
             }
@@ -35,11 +34,15 @@ namespace Morgengry
             return value;   
         }
 
-        public double GetValueOfCourse(Course course)
+        public static double GetValueOfCourse(Course course)
         {
-            if (course.DurationInMinutes > 0)
+            double value = 0;
+
+            for (int i = 0; i < course.DurationInMinutes; i+=60)
+            {
                 value += 875.00;
-                course.DurationInMinutes -= 60;
+            }
+                
 
             return value;
         }
