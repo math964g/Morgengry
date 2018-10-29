@@ -8,7 +8,7 @@ namespace Morgengry
 {
     public class BookRepository
     {
-        List<Book> books = new List<Book>();
+        private List<Book> books = new List<Book>();
 
         public void AddBook(Book book)
         {

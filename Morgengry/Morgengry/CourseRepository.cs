@@ -8,7 +8,7 @@ namespace Morgengry
 {
     public class CourseRepository
     {
-        List<Course> courses = new List<Course>();
+        private List<Course> courses = new List<Course>();
 
         public void AddCourse(Course course)
         {

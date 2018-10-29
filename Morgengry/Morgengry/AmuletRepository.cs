@@ -8,7 +8,7 @@ namespace Morgengry
 {
     public class AmuletRepository
     {
-        List<Amulet> amulets = new List<Amulet>();
+        private List<Amulet> amulets = new List<Amulet>();
 
         public void AddAmulet(Amulet amulet)
         {
